@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Strings | COMP1073 Client-Side JavaScript</title>
-	<link href="css/styles.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,18 +14,24 @@
     const output = document.querySelector('p');
     
     /* STEP 1: Creating Strings */
-
+    let step1 = 'Hello World!'; // single quotes
+    output.textContent = step1;
     
     // Note - whether you use 'single' or "double" quotes is a personal preference - try to be consistent
 
     /* STEP 2: Escaping Characters */
-
+    let step2 = 'you\'re the best!';
 
     /* STEP 3: Concatenation */
-
+    let step3a = 'ello';
+    let step3b = 'world';
+    console.log(step3a + ' ' + step3b); // hello world
 
     /* STEP 4: Numbers and Strings */
-
+    let fahrenhait = 32;
+    let step4c = String(fahrenhait); // convert number to string
+    console.log(step4c); // "32"
+    console.log(typeof(step4c)); // string
     // numbers can be converted to strings
 
     // strings can be converted to numbers, too

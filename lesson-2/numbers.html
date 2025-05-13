@@ -14,33 +14,45 @@
         declare and initialize an integer and a float, then in the console, reveal the number type with typeof(varName) */
         
         // Note - there are also different number systems: binary, octal, and hexadecimal
-
+        let myInt = 5; // integer
+        let myFloat = 5.5; // float
+        let myDouble = 5.555555555555555; // double
+        let myHex = 0xFF; // hexadecimal
+        let myOctal = 0o10; // octal
+        let myBinary = 0b1010; // binary
         /* STEP 2: Arithmetic operators
         + (addition), - (subtraction), * (multiplication), / (division), % (remainder or modulo), ** (exponent) */
-
+        let step2a = 5 * 2;
+        console.log(step2a); // 10
 
         // Try declaring and initializing a couple of variables as numbers
-
+        let num1 = 5;
+        let num2 = 10;
+        let step2b = num1 + num2 * num1
 
         /* OR… num1 * num2 / 8 + 2 - 0.5; */
 
         /* Keep in mind operator precedence, just like you were taught in math class (/, *, +, -)
         num1 + num2 * 5 - 25 ... is not 575 ... it is 215 */
-        
+        let step2c = num1 + num2 * 5 - 25;
         /* If you want to avoid this precedence, use parenthesis
         (num1 + num2) * 5 - 25 */
 
         /* STEP 3: Increment and decrement operators
         ++ and -- are mostly found inside loops to move a counter variable to the next value when needed, either up or down. */
-
+        let num = 5;
+        num++;
 
         // Note 1 - you cannot increment/decrement a number directly
         // Note 2 - typing num++ or num-- in the console will output the number before incrementing or decrmenting - try ++num or --num, instead
 
         /* STEP 4: Assignment Operators
         = (assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment) */
-
-
+        let step4 = 5;
+        step4 += 1;
+        step4 -= 1;
+        step4 *= 1;
+        step4 /= 1;
         /* STEP 5: Comparison Operators
         ===	(strict equality), !==	(strict-non-equality), == (equality), < (less than), > (greater than), <= (less than or equal to), >=	(greater than or equal to) */
 
