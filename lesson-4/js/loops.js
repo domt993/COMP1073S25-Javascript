@@ -3,7 +3,14 @@ let courseList = 'My courses this term are ';
 const msg = document.querySelector('#courses');
 /* STEP 1a: A simple FOR loop
 A simple loop of this structure needs an initializer (counter variable), an exit conditional, and and incrementor/decrementor */
-
+for (let i = 0; i < courses.length; i++) {
+	if (i == courses.length - 1) {
+		courseList += `${courses[i]}.`;
+	}
+	else {
+		courseList += `${courses[i]}, `;
+	}
+}
 msg.textContent = courseList;
 // STEP 1b: Add a conditional for the last item in the array so we can finish the sentence with a period.
 
@@ -18,8 +25,15 @@ btn.addEventListener('click', function() {
 	input.value = '';
 	input.focus();
 	/* STEP 2a: Create a FOR loop to iterate through the cities array */
-
-		/* STEP 2b: Build an IF/ELSE conditional that compares searchName with cities[i] */
+	for (let i = 0; i < cities.length; i++) {
+		if (searchName === cities[i]) {
+			result.textContent = `Found ${searchName} at index ${i}.`;
+			break;
+		}
+		else {
+			result.textContent = `Sorry, ${searchName} is not in the list.`;
+		}
+ 	}
 
 });
 
@@ -31,23 +45,38 @@ let num = 50;
 for (let i = 1; i <= num; i ++) {
 	let sqRoot = Math.sqrt(i);
 	/* STEP 3a: Build an IF statement that checks whether the square root of the number is NOT an integer */
-	//if () {
+	if (Math.floor(sqRoot) !== sqRoot) {
 		/* STEP 3b: If the square root of the number is not an integer, we don't want to output it to the paragraph, so skip the rest of the instructions inside this loop and go back up to the FOR, using 'continue' */
-
-	//}
+		continue;
+	}
 	numberList.textContent += i + ' ';
 }
 
 /* STEP 4: WHILE and DO/WHILE loops */
+while (j < cities.length) {
+	/* STEP 4a: Create a WHILE loop to iterate through the cities array */
+	if (j == cities.length - 1) {
+		outputWhile += `${cities[j]}.`;
+	} else {
+		outputWhile += `${cities[j]}, `;
+	}
+	j++;
+}
 
-let j = 0;
-let outputWhile = '';
 /* STEP 4a: WHILE loop to iterate through the cities array (created above in STEP 2) */
 
 console.log(outputWhile);
 
 let k = 0;
 var outputDo = '';
+do {
+	if (k == cities.length - 1) {
+		outputWhile += `${cities[k]}.`;
+	} else {
+		outputWhile += `${cities[k]}, `;
+	}
+	k++;
+} while (k < cities.length);
 /* STEP 4b: DO/WHILE loop - grab the above IF/ELSE and the 'i++', then create the very same output with DO/WHILE (uncomment the above 'i = 0', first) */
 
 console.log(outputDo);
