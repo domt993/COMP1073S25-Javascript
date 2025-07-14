@@ -13,7 +13,7 @@
         "dark chocolate chips",
         "vanilla extract"
       ],
-      "image" : "chocolate-mint.svg"
+      "image" : "https://domt993.github.io/COMP1073S25-Javascript/lesson-10/images/chocolate-mint.svg"
     },
     {
       "name" : "Perfect Peach Mango",
@@ -24,7 +24,19 @@
         "mango chunks",
         "clover honey"
       ],
-      "image" : "peach-mango.svg"
+      "image" : "https://domt993.github.io/COMP1073S25-Javascript/lesson-10/images/peach-mango.svg"
+    },
+    {
+      "name" : "Strawberry Sprinkle",
+      "calories" : 420,
+      "type" : "ice cream",
+      "ingredients" : [
+        "strawberry purée",
+        "strawberry chunks",
+        "whipped topping",
+        "sprinkles"
+      ],
+      "image" : "https://domt993.github.io/COMP1073S25-Javascript/lesson-10/images/strawberry-sprinkles.svg"
     }
   ]
 }
